@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "item":"Raw Rice",
+        "Stock":"2"
+    },
+    {
+        "id":2,
+        "item":"Idly Rice",
+        "Stock":"2"
+    },
+    {
+        "id":3,
+        "item":"Basmati Rice",
+        "Stock":"2"
+    },
+    {
+        "id":4,
+        "item":"Sona Masoori Rice",
+        "Stock":"2"
+    },
+    {
+        "id":5,
+        "item":"Wheat Flour",
+        "Stock":"2"
+    },
+    {
+        "id":6,
+        "item":"Multi Grain Flour",
+        "Stock":"2"
+    },
+    {
+        "id":7,
+        "item":"All Pupose Flour",
+        "Stock":"2"
+    },
+    {
+        "id":8,
+        "item":"Almondflour",
+        "Stock":"2"
+    }
+]
