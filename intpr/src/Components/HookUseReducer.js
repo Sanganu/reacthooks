@@ -32,7 +32,7 @@ const HookUseReducer = () => {
         showText: true
     });
     return (<div className="container border border-success">
-        <h4><button onClick={(event)=>dispatch({type:"TOGGLEDISPLAYTEXT"})}>Use Reducer</button></h4>
+        <h4><button className="btn btn-danger m-1 p-1" onClick={(event)=>dispatch({type:"TOGGLEDISPLAYTEXT"})}>Use Reducer</button></h4>
         {state.showText && <section>
             <h6>Use Reducer Hook when you have more state variables</h6>
             <h6>const [state, dispatch] = useReducer(reducer, initialArg, init);</h6><p>
@@ -42,9 +42,9 @@ const HookUseReducer = () => {
 
             </p>
         </section>}
-        <h1>Counter: <span>{state.count}</span></h1>
-        <button onClick={(event) =>dispatch({type:"INCREMENT"}) }>Increment Counter</button>
-        <button onClick={(event) => dispatch({type:"DECREMENT"}) }>Decrement Counter</button>
+        <h6>Counter: <span>{state.count}</span></h6>
+        <button className="btn btn-success" onClick={(event) =>dispatch({type:"INCREMENT"}) }>Increment Counter</button>
+        <button className="btn btn-warning" onClick={(event) => dispatch({type:"DECREMENT"}) }>Decrement Counter</button>
     </div >)
 }
 
