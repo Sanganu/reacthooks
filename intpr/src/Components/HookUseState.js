@@ -12,7 +12,7 @@ const HookUseState = () => {
         setMood(target.value)
     }
     return (<div className="text-center container border border-danger">
-       <h1>Use State</h1>
+       <h4>useState</h4>
         <label>Enter Mood Swing</label>
         <select value={mood} name="mood" onChange={handleOnChange}>
             <option value='happy'>Happy</option>

@@ -15,9 +15,10 @@ const TaskList =()=>{
     ])
     const[userTask,updateUserEntry]=useState("");
     const[userCheck, setUserTaskStatus]=useState(false);
-    useEffect = (()=>{
-        
-    },task)
+
+    useEffect  (()=>{
+        handleAddTask()
+    },[])
 
     const handleAddTask = (event) => {
     
