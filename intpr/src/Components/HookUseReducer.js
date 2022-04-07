@@ -35,7 +35,7 @@ const HookUseReducer = () => {
         <h4><button className="btn btn-danger m-1 p-1" onClick={(event)=>dispatch({type:"TOGGLEDISPLAYTEXT"})}>Use Reducer</button></h4>
         {state.showText && <section>
             <h6>Use Reducer Hook when you have more state variables</h6>
-            <h6>const [state, dispatch] = useReducer(reducer, initialArg, init);</h6><p>
+            <h6><strong>const [state, dispatch] = useReducer(reducer, initialArg, init);</strong></h6><p>
             An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
 
             useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.

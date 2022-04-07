@@ -13,7 +13,11 @@ const HookUseState = () => {
     }
     return (<div className="text-center container border border-danger">
                 <h4>useState</h4>
-                
+                <figure>
+            <strong>
+        const [counter,setCounter]) = useState(0)
+        setCounter(10)
+        </strong></figure>
                     <label>Enter Mood Swing</label>
                     <select value={mood} name="mood" onChange={handleOnChange}>
                         <option value='happy'>Happy</option>
