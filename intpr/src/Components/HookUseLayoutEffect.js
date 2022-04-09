@@ -20,7 +20,9 @@ Prefer the standard useEffect when possible to avoid blocking visual updates.</p
 
 </p>
 <p>Check console for the execution sequence and also see the value change</p>
-    <input ref={inputRef} type="text" value="Hello JS" placeholder="Hello JS"/>
+    <input ref={inputRef} type="text" value="Hello JS" 
+    readOnly
+    placeholder="Hello JS"/>
     </div>)
 }
 

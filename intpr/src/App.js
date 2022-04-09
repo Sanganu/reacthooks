@@ -6,6 +6,7 @@ import HookUseReducer from "./Components/HookUseReducer";
 import HookUseEffect from "./Components/HookUseEffect";
 import HookUseRef from "./Components/HookUseRef";
 import HookUseLayoutEffect from "./Components/HookUseLayoutEffect";
+import HookUseImperativeHandleChild from "./Components/HookUseImperativeHandleChild";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ Don’t call Hooks inside loops, conditions, or nested functions. Instead, alway
         <HookUseEffect />
         <HookUseRef />
         <HookUseLayoutEffect />
+        <HookUseImperativeHandleChild />
       </main>
+
       <main className="container">
         {/* <TaskList /> */}
       </main>

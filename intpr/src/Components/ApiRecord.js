@@ -2,7 +2,7 @@ import React from "react";
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 const ApiRecord = ({props}) => {
     return (<>
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '12rem' }}>
 
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
