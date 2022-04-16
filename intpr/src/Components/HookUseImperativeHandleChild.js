@@ -1,7 +1,7 @@
 import React,{useState, useImperativeHandle, forwardRef} from"react";
 
 
-const HookUseImperativeHAndle = () =>{
+const HookUseImperativeHandleChild = () =>{
     const [toggle,setToggle]=useState(true)
     return(<div className="container border border-secondary">
     <button onClick={()=>setToggle(!toggle)}>What is useimpertiveHAndle</button>
