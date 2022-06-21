@@ -2,13 +2,18 @@ import React,{useRef} from "react";
 import HookUseImperativeHandleChild from "./HookUseImperativeHandleChild";
 
 const HookUseImperativeHandleParent = () =>{
-const[]
+const toggleref = useRef(null)
+const handleChildComp =() =>{
+    console.log("Inparent")
+    toggleref.current.alterToggle()
+}
 return(<>
-<h6>UseImperativeHandlParent</h6>
-<HookUseImperativeHandleChild/>
-</>)
+    <h6>UseImperativeHandlParent</h6>
+    <button onClick={handleChildComp}>What is useimpertiveHandle(Parent)</button>
+    <HookUseImperativeHandleChild ref={toggleref}/>
+    </>)
 
 }
 
 
-module.exports = HookUseImperativeHandleParent
+export default HookUseImperativeHandleParent

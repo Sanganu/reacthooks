@@ -9,7 +9,7 @@ const HookUseRef = () => {
     const [user, setUser] = useState("");
 
     const changeUser = () => {
-        inputRef.current.focus();
+        // inputRef.current.focus();
         console.log(inputRef.current.value)
         setUser(inputRef.current.value)
         inputRef.current.value = ""
@@ -22,7 +22,8 @@ const HookUseRef = () => {
 
         <p>
                     const refContainer = useRef(initialValue);
-            useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+            useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). 
+            The returned object will persist for the full lifetime of the component.
         </p>
         <input name="getUserName" placeholder="Enter your name" ref={inputRef} type="text" />
         <button onClick={changeUser}>Accept User Name</button>
