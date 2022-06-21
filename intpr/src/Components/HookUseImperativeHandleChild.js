@@ -18,7 +18,7 @@ const HookUseImperativeHandleChild = forwardRef((props,ref) =>{
   
         {toggle &&
         <> 
-        <h6>HookUseImperativeHandleChild</h6>
+        <h6>HookUseImperativeHandleChild - onClick written in the child component</h6>
         <h6> useImperativeHandle(ref, createHandle, [deps]) </h6>
         <p>
         useImperativeHandle customizes the instance value that 
