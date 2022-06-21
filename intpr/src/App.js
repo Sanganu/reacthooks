@@ -6,6 +6,7 @@ import HookUseEffect from "./Components/HookUseEffect";
 import HookUseRef from "./Components/HookUseRef";
 import HookUseLayoutEffect from "./Components/HookUseLayoutEffect";
 import HookUseImperativeHandleParent from "./Components/HookUseImperativeHandleParent";
+import HookUseContextHOC from "./Components/HookUseContextHOC";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <HookUseRef />
         <HookUseLayoutEffect />
         <HookUseImperativeHandleParent />
+        <HookUseContextHOC />
       </main>
 
       <main className="container">
