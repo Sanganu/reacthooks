@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const HookUseState = () => {
     const [counter, setCounter] = useState(0);
     const [mood, setMood] = useState("relaxed")
@@ -32,7 +33,7 @@ const HookUseState = () => {
                 {showMood &&  <h6>Today is a {mood} day</h6>}
                 <p>useState is a Hook. We call it inside a function component to add some local state to it. React will preserve this state between re-renders. useState returns a pair: the current state value and a function that lets you update it. You can call this function from an event handler or somewhere else. It’s similar to this.setState in a class, except it doesn’t merge the old and new state together.</p>
                     <h6>Counter: <span>{counter}</span></h6>
-                    <button onClick={handleOnClick}>Start Counter</button>
+                    <button  className="btn btn-info text-white m-1 p-1" onClick={handleOnClick}>Start Counter</button>
         </div>)
         }
         

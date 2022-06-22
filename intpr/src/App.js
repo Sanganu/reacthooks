@@ -1,5 +1,5 @@
 import './App.css';
-import TaskList from "./Components/TaskList";
+// import TaskList from "./Components/TaskList";
 import HookUseState from "./Components/HookUseState";
 import HookUseReducer from "./Components/HookUseReducer";
 import HookUseEffect from "./Components/HookUseEffect";
@@ -7,6 +7,7 @@ import HookUseRef from "./Components/HookUseRef";
 import HookUseLayoutEffect from "./Components/HookUseLayoutEffect";
 import HookUseImperativeHandleParent from "./Components/HookUseImperativeHandleParent";
 import HookUseContextHOC from "./Components/HookUseContextHOC";
+import HookUseMemo from "./Components/HookUseMemo";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <HookUseLayoutEffect />
         <HookUseImperativeHandleParent />
         <HookUseContextHOC />
+        <HookUseMemo/>
       </main>
 
       <main className="container">

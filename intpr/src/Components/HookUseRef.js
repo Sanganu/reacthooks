@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import {Button} from "react-bootstrap";
 
 const HookUseRef = () => {
     const inputRef = useRef(null);
@@ -15,9 +16,11 @@ const HookUseRef = () => {
         inputRef.current.value = ""
 
     }
+    
     return (<div className="text-center container border border-danger">
-        {user && <h3>Good Day {user}</h3>}
+       
         <h4>useRef</h4>
+        {user && <h6>Good Day {user}</h6>}
         <p>Manipulate DOM Elements</p>
 
         <p>
@@ -26,7 +29,7 @@ const HookUseRef = () => {
             The returned object will persist for the full lifetime of the component.
         </p>
         <input name="getUserName" placeholder="Enter your name" ref={inputRef} type="text" />
-        <button onClick={changeUser}>Accept User Name</button>
+        <Button variant="warning" onClick={changeUser}>Accept User Name</Button>
     </div>)
 }
 

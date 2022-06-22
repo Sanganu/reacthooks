@@ -6,7 +6,7 @@ export const ContextState = createContext(null)
 const HookUseContextHOC = () => {
     const [displayExp,setDisplayExp] = useState(false);
 
-    return (<div>
+    return (<div className="container border border-info">
        <ContextState.Provider value={{displayExp,setDisplayExp}}>
            <HookContextC1 />
            <HookContextC2 />
