@@ -64,7 +64,7 @@ const HookUseMemo = ()=>{
                 In this example, we have an expensive function that runs on every render.
                 </p>
 
-            <Button variant="info" onClick={handleChange}>Change state variable userData...Check your console to see useMemo execution</Button>
+            
             {/* <Button variant="info" onClick={() => setChange(!change)}>Change boolean state variable...Check your console</Button> */}
             {timeConsuming}
             <h6>Get API Data - this fetch is called within useMemo</h6>
@@ -74,7 +74,7 @@ const HookUseMemo = ()=>{
                             empData.map((element, key) => <ApiRecord props={element} key={key} />)}
                     </article>  
                     <h6>Get API Data - this fetch is called with the button onClick to change state userData and to see the useMemo(empData) is not getting executed.</h6>
-
+                    <Button variant="info" onClick={handleChange}>Change state variable userData...Check your console to see useMemo execution</Button>
                      <article className="d-flex flex-wrap">
                     
                         {userData &&
