@@ -1,3 +1,4 @@
+
 .hlink:hover{
    color: white;
 }
@@ -12,4 +13,13 @@
 
 .hlink:link{
   color: rgb(26, 6, 76);
+}
+h1{
+  font-family: 'Mukta', sans-serif;
+}
+main{
+  font-family: 'Dancing Script', cursive;
+}
+h4{
+  font-family: 'Vazirmatn', sans-serif;
 }

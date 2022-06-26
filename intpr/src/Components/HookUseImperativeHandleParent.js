@@ -9,7 +9,7 @@ const handleChildComp =() =>{
     toggleref.current.alterToggle()
 }
 return(<div className="container border border-success">
-    <h4>UseImperativeHandlParent</h4>
+    <h4>UseImperativeHandleParent</h4>
     <Button onClick={handleChildComp}>What is useimpertiveHandle(Parent)</Button>
     <HookUseImperativeHandleChild ref={toggleref}/>
     </div>)
