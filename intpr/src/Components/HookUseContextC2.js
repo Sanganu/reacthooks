@@ -11,6 +11,7 @@ const HookUseContextC2 = () =>{
 
 useContext(MyContext) only lets you read the context and subscribe to its changes. You still need a MyContext.Provider above in the tree to provide the value for this context.
         </p>
+        <p>The Navbar is also implemented with useContext</p>
 </figure>}
 
     </>)
