@@ -1,0 +1,25 @@
+
+.hlink:hover{
+   color: white;
+}
+
+.hlink:active{
+  color: rgb(223, 13, 13);
+}
+
+.hlink:visited{
+  color:rgb(13, 13, 176);
+}
+
+.hlink:link{
+  color: rgb(26, 6, 76);
+}
+h1{
+  font-family: 'Mukta', sans-serif;
+}
+main{
+  font-family: 'Dancing Script', cursive;
+}
+h4{
+  font-family: 'Vazirmatn', sans-serif;
+}
