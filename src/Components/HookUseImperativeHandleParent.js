@@ -10,7 +10,7 @@ const handleChildComp =() =>{
 }
 return(<div className="container border border-success">
     <h4>UseImperativeHandleParent</h4>
-    <Button onClick={handleChildComp}>What is useimpertiveHandle(Parent)</Button>
+    <Button onClick={handleChildComp}>What is useImperativeHandle(Parent)</Button>
     <HookUseImperativeHandleChild ref={toggleref}/>
     </div>)
 
