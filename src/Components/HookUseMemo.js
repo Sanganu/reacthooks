@@ -68,7 +68,7 @@ const HookUseMemo = ()=>{
             {/* <Button variant="info" onClick={() => setChange(!change)}>Change boolean state variable...Check your console</Button> */}
             {timeConsuming}
             <h6>Get API Data - this fetch is called within useMemo</h6>
-                <article className="d-flex flex-wrap">
+                <article className="flex flex-wrap">
                
                         {empData &&
                             empData.map((element, key) => <ApiRecord props={element} key={key} />)}
