@@ -44,7 +44,7 @@ const HookUseEffect = () => {
                            
                     } */}
         </figure>
-        <article className="flex flex-wrap">
+        <article className="d-xflex flex-wrap">
             {empData &&
                 empData.map((element, key) => <ApiRecord props={element} key={key} />)}
         </article>

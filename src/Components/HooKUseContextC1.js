@@ -9,9 +9,11 @@ const HookUseContextC1 = () =>{
        event.target.checked ?  setDisplayExp(true) : setDisplayExp(false)
     }
     return(<>
+    <div className="container border border-success text-center">
         <h4>UseContext</h4>
         <label>What is useContext Hook ?</label>
         <input name="context" onChange={handleExplanation} value="true" type="checkbox" />
+  </div>
     </>)
 }
 

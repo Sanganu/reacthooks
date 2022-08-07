@@ -7,7 +7,7 @@
   const {setCurrentHook}    = useContext(ContextNavState);
  return(<Navbar bg="secondary h-100 d-block" variant="dark">
  
-    <Navbar.Brand href="#home">Hooks</Navbar.Brand>
+    {/* <Navbar.Brand href="#home">Hooks</Navbar.Brand> */}
     <Nav className="d-block text-start">
       <Nav.Link className="hlink" onClick={()=> setCurrentHook("Home")}>Home</Nav.Link>
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("useState")}>useState</Nav.Link>
@@ -18,7 +18,8 @@
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("useImperativeHandle")}>useImperativeHandle</Nav.Link>
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("useContextHOC")}>useContext</Nav.Link>
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("useMemo")}>useMemo</Nav.Link>
-    
+      <Nav.Link  className="hlink" onClick={()=> setCurrentHook("customHook")}>Custom Hook</Nav.Link>
+      <Nav.Link  className="hlink" onClick={()=> setCurrentHook("tasklist")}>Task List</Nav.Link>
     </Nav>
  
   </Navbar>)

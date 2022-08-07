@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
-const useAcceptInput = (fieldValue) => {
-    const [fieldValue, setFieldValue] = useState(fieldValue)
+const useAcceptInput = (fieldStartValue) => {
+    const [value, setFieldValue] = useState(fieldStartValue)
 
     const handleInput = {
         value,
-        onchange: ({ target }) => setFieldValue(target.value)
+        onChange: ({ target }) => setFieldValue(target.value)
     }
     const clearField = () => {
-        setFieldValue(fieldValue)
+        setFieldValue(fieldStartValue)
     }
-    return { fieldValue, handleInput, clearField }
+    return [ value, handleInput, clearField ]
 }
 
 
