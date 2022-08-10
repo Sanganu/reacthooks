@@ -4,6 +4,7 @@ import React,{useState,createContext} from "react";
 // import TaskList from "./Components/TaskList";
 import NavMenu  from "./Components/NavMenu";
 import Concept from "./Components/Concepts";
+import "./font.ttf";
 
 export const ContextNavState = createContext(null)
 

@@ -1,5 +1,6 @@
 import React from "react";
 import useAcceptInput from "./useAcceptInput";
+import SampleInputForm from "./SampleInputForm";
 
 const HooksUseCustomHook = () => {
     const [username, setUserName, clearUserName] = useAcceptInput(' ');
@@ -12,7 +13,7 @@ const HooksUseCustomHook = () => {
     const resetInput = ()=>{
         clearEmail()
         clearUserName()
-        console.log(username,email)
+        console.log(username,email,"clear")
     }
 
     return (<>
@@ -31,11 +32,16 @@ const HooksUseCustomHook = () => {
                     <li>Allow stateful logic to be reused between multiple components</li>
                 </ul>
             </section>
+            <SampleInputForm />
+            <h6>Testing with Custom hooks</h6>
+            <p>{username} {email}</p>
             <form>
                 <label>Enter username</label>
                 <input type="text" {...setUserName}  />
+                <br/>
                 <label>Enter Email</label>
                 <input type="text" {...setEmail} />
+                <br />
                 <button onClick={handleClick}>Save</button>
                 <button onClick={resetInput}>Reset</button>
             </form>

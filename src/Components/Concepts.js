@@ -9,9 +9,10 @@ import HookUseImperativeHandleParent from "./HookUseImperativeHandleParent";
 import HookUseContextHOC from "./HookUseContextHOC";
 import HookUseMemo from "./HookUseMemo";
 import Home from "./Home";
-import Tasklist from "./TaskList";
+import Tasklist from "./taskItems/TaskList";
 import HooksUseCustomHook from "./customHooks/HooksUseCustomHook";
-import SampleInputForm from "./SampleInputForm"
+import Catalog from "./shoppingCart/Catalog";
+// import SampleInputForm from "./SampleInputForm"
 
 const Concepts = () => {
     const {currentHook} = useContext(ContextNavState)
@@ -26,8 +27,9 @@ const Concepts = () => {
         {currentHook === "useMemo" && <HookUseMemo/>}
         {currentHook === "Home" && <Home/>}
         {currentHook === "tasklist" &&  <Tasklist />}
-        {currentHook === "customHook" && <SampleInputForm />}
-        {/* {currentHook === "customHook" && <HooksUseCustomHook/>} */}
+        {/* {currentHook === "customHook" && <SampleInputForm />} */}
+        {currentHook === "customHook" && <HooksUseCustomHook/>}
+        {currentHook === "shopping" && <Catalog/>}
         </>)
 }
 

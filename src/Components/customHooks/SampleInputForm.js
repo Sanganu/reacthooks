@@ -1,5 +1,5 @@
 import React from "react";
-import useAcceptInput from "./customHooks/useAcceptInput";
+import useAcceptInput from "./useAcceptInput";
 
 const SampleInputForm = () => {
     const  [username,setUserName,clearUserName] = useAcceptInput("");

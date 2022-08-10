@@ -20,6 +20,7 @@
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("useMemo")}>useMemo</Nav.Link>
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("customHook")}>Custom Hook</Nav.Link>
       <Nav.Link  className="hlink" onClick={()=> setCurrentHook("tasklist")}>Task List</Nav.Link>
+      <Nav.Link className="hlink" onClick={()=>setCurrentHook("shopping")}>Catalog</Nav.Link>
     </Nav>
  
   </Navbar>)
