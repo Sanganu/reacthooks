@@ -8,7 +8,7 @@ const Product = ({item,addToCart}) => {
       <h6>Product {item}</h6>
       <p>
       <label>Enter Quantity</label>
-      <input type="number" value={quantity} onChange={()=>setQuantity(quantity+1)}/></p>
+      <input type="number" value={quantity} onChange={()=>setQuantity(quantity)}/></p>
       <br/>
       <button onClick={addToCart({item: item,quantity: quantity})}>Add To Cart</button>
     </aside>)
