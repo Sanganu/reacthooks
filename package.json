@@ -1,30 +1,31 @@
 {
-  "name": "intpr",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.1.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "tailwindcss": "^2.2.16",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "reactappsystem",
+  "version": "1.0.0",
+  "description": "REACT from scratch",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [
+    "React"
+  ],
+  "author": "Sangeetha.K",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
